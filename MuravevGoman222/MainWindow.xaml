@@ -8,5 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
+        <Image HorizontalAlignment="Center"  Margin="0,32,0,0" VerticalAlignment="Top" Source="/1.png" Height="108" Width="342"/>
+        <TextBox HorizontalAlignment="Left" Margin="229,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="229,230,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="229,365,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="247,268,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="247,308,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="247,288,0,0" VerticalAlignment="Top"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="477,308,0,0" VerticalAlignment="Top"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="477,333,0,0" VerticalAlignment="Top" Width="63"/>
+
     </Grid>
 </Window>
