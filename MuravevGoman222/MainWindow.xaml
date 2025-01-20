@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:MuravevGoman222"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Viewbox>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="109*" />
@@ -18,16 +19,17 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Grid.Column="0" VerticalAlignment="Center" Source="/1.png" Height="108" Width="342"/>
-        <TextBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Height="18" Margin="23,0,0,0"/>
-        <TextBox Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" Width="200" Height="20" Margin="10,10,0,79"/>
-        <TextBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="270,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Height="18" />
-        <RadioButton Grid.Row="2" Grid.Column="0" Content="sh(x)" HorizontalAlignment="Left" VerticalAlignment="Top" Height="15" Width="85" Margin="0,40,0,0"/>
-        <RadioButton Grid.Row="2" Grid.Column="0" Content="x^2" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="15" Width="85" />
-        <RadioButton Grid.Row="2" Grid.Column="0" Content="e^2" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Height="15" Width="85" />
-        <Button Grid.Row="3" Grid.Column="1" Content="Вычислить" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="30" Width="70"/>
-        <Button Grid.Row="3" Grid.Column="1" Content="Очистить" HorizontalAlignment="Right" Margin="0,0,90,0" VerticalAlignment="Bottom" Width="70"  Height="30" />
+        <TextBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Height="18" Margin="23,0,0,0" x:Name="InputX"/>
+        <TextBox Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="200" Height="20" Margin="50,10,0,79" IsReadOnly="True" x:Name="OutputResult"/>
+        <TextBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="270,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Height="18" x:Name="InputB"/>
+        <RadioButton Grid.Row="2" Grid.Column="0" Content="x^2" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="15" Width="85" x:Name="Fx"/>
+        <RadioButton Grid.Row="2" Grid.Column="0" Content="e^x" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Height="15" Width="85" x:Name="Fe"/>
+        <RadioButton Grid.Row="2" Grid.Column="0" Content="sh(x)" HorizontalAlignment="Left" VerticalAlignment="Top" Height="15" Width="85" Margin="0,40,0,0" x:Name="Fs"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="Вычислить" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height="30" Width="70" Click="ButtonStart"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="Очистить" HorizontalAlignment="Right" Margin="0,0,90,0" VerticalAlignment="Bottom" Width="70"  Height="30" Click="ButtonReset"/>
         <Label Grid.Row="1" Grid.Column="0" Content="x:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Grid.Row="1" Grid.Column="0" Content="b:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="245,0,0,0" RenderTransformOrigin="2.011,0.385"/>
-
+        <Label Grid.Row="3" Grid.Column="0" Content="Result:" Margin="0,6,0,0" HorizontalAlignment="Left"/>
     </Grid>
+    </Viewbox>
 </Window>
