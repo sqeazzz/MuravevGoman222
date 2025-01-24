@@ -21,6 +21,15 @@ namespace MuravevGoman222
     public partial class MainWindow : Window
     {
         double x, b, xb, function, result;
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите выйти?", Name = "Предупреждение", MessageBoxButton.OKCancel, MessageBoxImage.Asterisk) == MessageBoxResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
